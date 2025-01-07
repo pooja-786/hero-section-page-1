@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.bg-image {
+  background-image: url(../image/png/hero-bg.png) !important;
+ background-repeat: no-repeat;
+ background-size: cover;
+  
+}
+.bg-image::shadow {
+    backdrop-filter: blur(63px)
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: space-between !important;
+    margin-top: 30px;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none !important;
+    padding-left: 30px !important;
+
+}
+
+.navbar ul li a {
+    text-decoration: none !important;
+    margin-inline: 20px;
+   font-family:"Outfit",sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.16px;
+        color: rgba(255, 255, 255, 1);
+      
+   
+}
+
+ul li .btn-1 {
+    border: 2px solid linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%) !important;
+    background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
+    padding: 13px 32px 13px 32px;
+        border-radius: 57px;
+         font-family: "Outfit",sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 25.2px;
+            color: rgba(255, 255, 255, 1);
+          
+    
+
+}
+
+.logo {
+    margin-left: 12px;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.heading-1 {
+    font-family: "Outfit",sans-serif;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 86.4px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        
+}
+
+@media(max-width:992px) {
+    .coloum {
+        flex-direction: column-reverse !important;
+    }
+
+}
+
+@media (max-width:992px) {
+
+
+    label[for="list-1"] {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+    }
+
+    label[for="list-1"]>span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        z-index: 2;
+    }
+
+    input#list-1:checked~.ul-modify {
+        background-color: black;
+        right: 0;
+    }
+
+    input:checked~label[for="list-1"]>span:nth-child(1) {
+        transform: rotate(64deg);
+        transform-origin: left;
+    }
+
+    input:checked~label[for="list-1"]>span:nth-child(2) {
+        transform: rotate(-40deg);
+        opacity: 0;
+
+    }
+
+    input:checked~label[for="list-1"]>span:nth-child(3) {
+        transform: rotate(-63deg);
+        transform-origin: left;
+    }
+
+    .ul-modify {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 1;
+        transition: all 200ms linear;
+        gap: 20px;
+    }
+
+}
