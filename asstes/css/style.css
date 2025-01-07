@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-.bg-image {
+/* .bg-image {
   background-image: url(../image/png/hero-bg.png) !important;
  background-repeat: no-repeat;
  background-size: cover;
   
+} */
+
+.bg-color {
+    background-color: black;
+    background-image: url(../image/png/hero-bg.png) !important;
+    background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 }
 .bg-image::shadow {
     backdrop-filter: blur(63px)
@@ -59,11 +67,11 @@ ul li .btn-1 {
     margin-left: 12px;
 }
 
-.col-6 {
+/* .col-6 {
     width: 50%;
     padding-left: 12px;
     padding-right: 12px;
-}
+} */
 
 .heading-1 {
     font-family: "Outfit",sans-serif;
@@ -73,6 +81,39 @@ ul li .btn-1 {
         text-align: center;
         color: rgba(255, 255, 255, 1);
         
+}
+
+.heading-2 {
+    font-family: "Outfit",sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+       
+}
+
+.btn-2 {
+         border: 2px solid linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%); 
+        background: linear-gradient(103.52deg, #3A3EF5 18.99%, #32C8F1 82.34%);
+        padding: 13px 32px 13px 32px;
+        border-radius: 57px;
+        font-family: "Outfit", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25.2px;
+        color: rgba(255, 255, 255, 1);
+        margin-left: 170px;
+        margin-top: 20px;
+}
+.positin-relative {
+    position: relative !important;
+}
+
+.blue button {
+    position: absolute;
+    top: 70px;
+     
 }
 
 @media(max-width:992px) {
